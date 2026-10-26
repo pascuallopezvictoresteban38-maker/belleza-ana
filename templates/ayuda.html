@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block titulo %}Ayuda de Belleza Ana{% endblock %}
+{% block contenido %}
+<section>
+  <h2 class="h4">Ayuda de Belleza Ana</h2>
+  <ol>
+    <li>Escribe el producto, la categoría y el estado.</li>
+    <li>Pulsa «Guardar producto».</li>
+    <li>Usa «Editar» para corregir los datos de un producto.</li>
+    <li>Usa «Eliminar» solo con productos de prueba.</li>
+  </ol>
+  <p class="text-secondary">Fecha de consulta: {{ fecha }}</p>
+  <a class="btn btn-primary" href="{{ url_for('inicio') }}">Volver al inicio</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('inicio') }}#lista">Ver catálogo</a>
+</section>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block titulo %}Error · Belleza Ana{% endblock %}
+{% block contenido %}
+<div class="alert alert-danger" role="alert">{{ mensaje }}</div>
+<a class="btn btn-primary" href="{{ url_for('inicio') }}">Volver al inicio</a>
+{% endblock %}
